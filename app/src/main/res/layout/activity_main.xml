@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/layout"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="Binary And Decimal Converter"
+        android:textColor="#EAB619"
+        android:textSize="24sp" />
+
+
+    <EditText
+        android:id="@+id/EditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="100dp"
+        android:fontFamily="@font/fredoka_one"
+        android:gravity="center"
+        android:hint="Enter Digit To Convert"
+        android:inputType="numberDecimal"
+        android:textColor="#000000"
+        android:textColorHint="#000000"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="143dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="90dp"
+        android:fontFamily="@font/fredoka_one"
+        android:gravity="center"
+        android:hint="Final Value"
+        android:textColorHint="#970B0B"
+        android:textSize="24sp" />
+
+    <RadioGroup
+        android:id="@+id/RadioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp">
+
+        <RadioButton
+            android:id="@+id/b"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="170dp"
+            android:checked="true"
+            android:fontFamily="@font/fredoka_one"
+            android:text="Decimal Value"
+            android:textSize="24sp"
+            tools:layout_marginTop="65dp" />
+
+        <RadioButton
+            android:id="@+id/d"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/fredoka_one"
+            android:text="Binary Value"
+            android:textSize="24sp" />
+    </RadioGroup>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="130dp"
+        android:layout_marginTop="60dp"
+        android:fontFamily="@font/fredoka_one"
+        android:gravity="center"
+        android:onClick="add"
+        android:text="Convert"
+        android:textColor="#05587E"
+        android:textSize="20sp" />
+
+
+
+</LinearLayout>
